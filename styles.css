@@ -34,13 +34,57 @@
 
 .box{
     position: absolute;
-    width: 132px;
-    height: 220px;
-    top: 90px;
+    padding: 25px;
     background-color: black;
     box-shadow: 0px 2px 2px rgba(2, 2, 2, 0.25);
     border-radius: 0px 20px 20px 20px;
+    bottom: 10;
+    font-size: 12px;
+    width: 250px;
+    max-width: 350px;
+    /* transform: translate(-168px); */
+    display: none;
     
+}
+
+.sidebox{
+    position: absolute;
+    background-color: #000000;
+    width: 132px;
+    height: 120px;
+    top: 90px;
+    font-size: 12px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.board{
+    color: #F0F0F0;
+    font-size: 12px;
+    top: 0;
+}
+
+.sidebarCol{
+    position: absolute;
+    background-color: #f6f7fa;
+    top: 0;
+    bottom: 0;
+    font-size: 12px;
+    width: 300px;
+    max-width: 350px;
+    padding-left: 0;
+    border-radius: 0px 20px 20px 20px;
+    /* transform: translate(-168px); */
+    display: none;
+}
+
+.sidebarCol ul li {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.sidebarCol ul li:first-child{
+   font-size: 14px;
+   font-weight: bolder;
 }
 
 .sidebar{
@@ -48,7 +92,7 @@
     width: 132px;
     height: 392px;
     left: 0px;
-    top: 140px;
+    top: 50px;
     background: #fdfdfd;
     box-shadow: 0px 2px 2px rgba(2, 2, 2, 0.25);
     border-radius: 0px 0px 20px 20px;
@@ -75,10 +119,10 @@
 }
 
 .sectionText{
+    margin: 30px;
     display: flex;
     align-content: space-between;
     text-align: center;
-    margin: 20px;
     margin-left: 10rem;
     gap: 20rem;
 }
@@ -100,7 +144,7 @@
 }
 
 .explore{
-    position: absolute;
+    top: 200px;
     background: #E9ECEF;
     border-radius: 5px;
     padding: 15px;
@@ -112,7 +156,6 @@
 }
 
 .projectText{
-    position: relative;
     margin: 10px;
     width: 900px;
     font-size: 14px;
@@ -139,7 +182,6 @@
     height: 394px;
     left: 1199px;
     top: 108px;
-
     background: #010101;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px 0px 0px 30px;
@@ -170,20 +212,17 @@
 
 
 .boxContainer{
-    position: relative;
+    box-sizing: border-box;
+    margin: 20px;
    display: flex;
-   flex-direction: row;
    flex-wrap: wrap;
-   align-items: end;
+   margin-left: 20%;
    gap: 2rem;
 } 
 
 .cards{
-    position: relative;
     width: 450px;
     height: 580px;
-    left: 220px;
-    top: 197px;
     background: #FDFDFD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -194,7 +233,6 @@
     justify-content: center;
     width: 100%;
     height: 50px;
-    left: 214px;
     top: 397px;
     color: #FFFFFF;
     background: #000000;
